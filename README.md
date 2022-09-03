@@ -5,6 +5,7 @@ And our last directory is magento2 directory. In our case we have downloaded Mag
 Now untar the downloaded magento file named 2.4.2 by using command:
 
 wget https://codeload.github.com/magento/magento2/tar.gz/refs/tags/2.4.2
+
 tar -xvzf 2.4.2
 
 Now move the data extracted in directory magento2-2.4.2 into your magento2 directory
@@ -20,16 +21,19 @@ docker exec -it apache2 bash
 Run command composer and check the version of the composer if the composer is not installed the run the command for installing composer
 
 composer
+
 composer install
 
 For checking the database is created or not use command:
 
 Mysql -u root -ppassword -h 127.0.0.1
+
 SHOW DATABASES;
 
 If the magentodb named database is created then leave it as it is if the database is not created then create it by using the command:
 
 CREATE DATABASE 	magentodb;
+
 EXIT;
 
 Enable elasticsearch before installing the magento by command:
