@@ -60,12 +60,19 @@ Now give permissions to the files:
 [permissions]:
 
 find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
+
 find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
+
 chown -R :www-data .
+
 chmod -R 777 var/ setup/ vendor/ pub/ bin/
+
 chmod u+x bin/magento
+
 php bin/magento c:c
+
 php bin/magento c:f
+
 php bin/magento indexer:reindex
 
 Now go to /etc/apache2/sites-available/000-default.conf and add /pub after the html in document root directory 
