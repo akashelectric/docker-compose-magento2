@@ -1,4 +1,4 @@
-# docker-compose-magento2
+# docker-compose-magento2.4.2
 
 **And our last directory is magento2 directory. In our case we have downloaded Magento 2 latest version from https://meetanshi.com/blog/download-magento/ and unarchive it in magento2 directory. This directory will be mapped with /var/www/html directory in docker container.**
 
